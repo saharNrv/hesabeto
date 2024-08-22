@@ -1,0 +1,35 @@
+.boxWrap {
+  @apply flex items-center justify-between my-3 py-[10px] px-[20px];
+}
+.boxInfoWrap {
+  @apply flex items-center gap-[5px];
+}
+.boxIconWrap {
+  @apply w-10 h-10 bg-steel-blue-400 text-steel-blue-800;
+  @apply flex items-center justify-center rounded-[4px] text-xl;
+}
+.boxInfo {
+}
+.boxTitleWrap {
+  @apply flex items-center gap-[5px];
+}
+.boxImg {
+  @apply w-[22px] h-[22px] rounded-[3px] object-cover;
+}
+.boxTitle{
+    font-size: 15px;
+    color: #858484;
+}
+.boxDate{
+
+    font-size: 12px;
+    color: #949494;
+}
+
+.boxPrice{
+    @apply text-steel-blue-800 text-[17px]
+}
+.boxPrice span{
+    color: #949494;
+    font-size: 12px;
+}

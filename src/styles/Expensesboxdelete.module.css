@@ -1,0 +1,51 @@
+.expensesboxdelete {
+  @apply flex flex-col items-center justify-between py-6 px-2;
+  border-bottom:  2px solid #cbe0f2
+}
+.expensesboxdeleteInfon {
+  @apply flex items-center justify-between w-full p-[20px];
+}
+
+.expensesboxdeleteTitle {
+  color: #666;
+}
+.ExpensesboxdeletePrice {
+  @apply text-steel-blue-600;
+}
+.expensesboxdeleteGroup {
+  @apply flex items-center gap-2 flex-row-reverse text-steel-blue-600;
+}
+.expensesboxdeleteImgWrap {
+    @apply flex items-center gap-2 flex-row-reverse text-steel-blue-600
+}
+.expensesboxdeleteImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.expensesboxdeleteBtn{
+    background-color: red;
+    padding: 15px;
+    margin: 20px;
+    border-radius:6px ;
+
+}
+.expensesboxdeleteBtn button{
+
+    @apply p-3 rounded-md  w-full flex items-center justify-center gap-2 text-red-500 border-none
+}
+
+.expensesboxdeleteModalBtn{
+ @apply grid grid-cols-2 gap-2 my-4
+}
+
+.expensesboxdeleteModalBtn1,.expensesboxdeleteModalBtn2{
+  @apply p-4 border-none rounded-md
+}
+.expensesboxdeleteModalBtn1{
+ 
+}
+.expensesboxdeleteModalBtn2{
+  @apply bg-green-500 text-white
+}

@@ -1,0 +1,56 @@
+.button_container {
+  @apply flex flex-col p-3;
+}
+
+.button {
+  @apply w-full p-3 mt-2 border-none bg-steel-blue-600 text-white;
+  @apply flex items-center text-base gap-2 justify-between rounded-[5px] cursor-pointer;
+}
+
+.choose_month {
+  @apply mt-3;
+}
+
+.monthly_button {
+  @apply w-full p-3 mt-2 border-none bg-steel-blue-600 text-white;
+  @apply flex items-center gap-2 text-base justify-start rounded-[5px];
+}
+
+.select {
+  @apply mt-3 bg-slate-200 p-2 w-full outline-none border-2 border-slate-400;
+}
+
+.selects_container {
+  @apply flex justify-around w-full space-x-2 space-x-reverse;
+}
+
+.button_report {
+  @apply mt-5 justify-center;
+}
+
+.chart_container {
+  @apply mt-10 w-full;
+}
+
+.title_container {
+  @apply border-b-2 border-steel-blue-500;
+}
+
+.range_container {
+  @apply flex justify-between  gap-4 mt-2;
+}
+
+.choose_range {
+  @apply w-full;
+}
+
+.input {
+  @apply w-full bg-slate-200 rounded-md outline-none p-3 mt-3;
+}
+
+.chartTitle {
+  margin: 20px;
+  padding: 15px;
+}
+
+

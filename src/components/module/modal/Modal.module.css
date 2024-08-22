@@ -1,0 +1,20 @@
+.dialog {
+  @apply relative z-10 focus:outline-none;
+}
+.modalWrap {
+  @apply fixed bottom-0 right-0 left-0 z-10 w-screen overflow-y-auto;
+}
+.modal {
+  @apply flex min-h-full items-center justify-center;
+}
+
+.dialogPanel {
+  @apply w-full max-w-md rounded-t-xl bg-white p-6 backdrop-blur-2xl  ease-out;
+}
+.dialogTitle {
+  @apply text-base/7 font-medium;
+}
+
+.backdrup {
+    @apply fixed inset-0 bg-black/30 duration-300 ease-out data-[closed]:opacity-0;
+  }

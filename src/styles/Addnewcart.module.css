@@ -1,0 +1,52 @@
+.addnewcart {
+  position: relative;
+}
+
+.form {
+  width: 100%;
+  padding: 20px;
+}
+
+.formBtn {
+  padding: 5px;
+  margin: 10px;
+}
+.formBtn button {
+  @apply w-full p-[10px] border-none rounded-[5px]
+    bg-steel-blue-600 text-white;
+}
+
+.addnewcartBtnWrap{
+  padding: 10px;
+}
+
+
+
+
+
+.addnewcartBtnTitle{
+
+color: #475569;
+padding: 5px;
+}
+.addnewcartBtn{
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  text-align: right;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  color: #757575;
+
+}
+
+.gridContainer {
+  @apply grid grid-cols-2 gap-3 overflow-y-scroll h-[400px] p-5;
+}
+
+.gridContainer button {
+  @apply p-2 rounded-md bg-steel-blue-200 outline-none flex items-center justify-between ;
+}
+
+
+

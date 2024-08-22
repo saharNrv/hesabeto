@@ -1,0 +1,28 @@
+@font-face {
+    font-family: shabnam;
+    src: url("/fonts/shabnam/Shabnam-Medium.woff");
+  }
+  
+  @font-face {
+    font-family: shabnam-Bold;
+    src: url("/fonts/shabnam/Shabnam-Bold.woff");
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: shabnam;
+    direction: rtl;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }

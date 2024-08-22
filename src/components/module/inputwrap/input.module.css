@@ -1,0 +1,15 @@
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .inputWrap label {
+    @apply text-slate-600;
+  }
+  .inputWrap input {
+    margin: 10px;
+    padding: 12px 10px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+  }

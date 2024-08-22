@@ -1,0 +1,18 @@
+.carts {
+  @apply flex flex-row-reverse items-center justify-between py-6 px-2;
+}
+.cartsRight {
+  @apply flex items-center 
+    justify-center border-solid border-2
+     border-steel-blue-500 rounded-md
+     text-steel-blue-600;
+}
+.cartsLink {
+  @apply flex items-center justify-center gap-2 p-2 md:p-4;
+}
+.cartsLeft {
+  @apply flex items-center justify-end;
+}
+.cartsTitle {
+  text-align: left;
+}

@@ -1,0 +1,29 @@
+.navbar {
+  @apply w-full h-[80px] rounded-t-xl bg-steel-blue-200 fixed bottom-0 flex items-center justify-center;
+}
+
+.navbarList {
+  @apply flex items-center gap-14;
+}
+.navbarLink{
+  @apply flex flex-col justify-center items-center
+}
+
+.navbarItem {
+  @apply flex flex-col justify-center items-center;
+}
+
+.navbar a {
+  @apply text-[12px] sm:text-sm;
+}
+
+.navbarIcon{
+  font-size: 24px
+}
+.navbarPlus {
+  @apply w-10 h-10 flex items-center 
+  justify-center text-steel-blue-50 text-xl  
+  rounded-full bg-steel-blue-600
+  border-solid border-4 border-steel-blue-800
+  ;
+}

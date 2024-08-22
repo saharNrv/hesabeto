@@ -1,0 +1,79 @@
+.newexpense {
+  @apply pt-5 px-3 pb-[100px];
+}
+
+.newexpenseBtnSubTitle {
+  color: #475569;
+  margin-top: 10px;
+}
+.newexpenseBtnContent {
+  padding: 10px;
+}
+.newexpenseBtn {
+  background-color: #f3f3f3;
+  @apply w-full py-[12px] px-[10px] border-none rounded-[5px] flex items-center justify-between;
+}
+.newexpenseBtnTitle {
+  color: #757575;
+}
+.newexpenseTextarea {
+  width: 100%;
+  padding: 12px 10px;
+  height: 120px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  resize: none;
+}
+
+.newexpenseSubmit {
+  padding: 10px;
+}
+.newexpenseSubmitBtn {
+  @apply w-full bg-steel-blue-600 p-3 border-none rounded-[5px] text-white;
+}
+
+.cartBankBtnWrap {
+  margin: 10px 0px;
+}
+.cartBankBtn {
+  @apply w-full flex items-center gap-2 bg-inherit border-2 border-solid border-steel-blue-700;
+  @apply rounded-md py-2 px-4 mt-4;
+}
+.cartBankBtnImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid lightblue;
+}
+.cartBankBtnInfo {
+}
+.cartBankBtnInfoName {
+  font-size: 18px;
+}
+.cartBankBtnInfoCartNumber {
+  color: #787878;
+}
+/* date modal style */
+.dateWrapper {
+  margin-top: 10px;
+}
+.dateWrapperInput {
+  @apply grid grid-cols-3 gap-2 p-2;
+}
+.dateInput {
+  @apply p-1;
+}
+.dateBtn {
+  @apply w-full mt-3 p-2 bg-steel-blue-600 border-none rounded-[5px] text-white;
+}
+/* category modal style */
+
+.categoryWrap {
+  @apply grid grid-cols-2 gap-2 my-3
+}
+.categoryBtn {
+
+  @apply p-2 border-2 border-solid border-steel-blue-400 rounded-md
+  
+}

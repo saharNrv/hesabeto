@@ -1,0 +1,21 @@
+.topbar{
+@apply w-full 
+  flex items-center justify-center
+ text-steel-blue-500 py-6 relative;
+ border-bottom: 2px solid #cbe0f2;
+
+}
+.topbar h1{
+    font-size: 20px;
+}
+.backBtn {
+   border: 2px solid rgb(65 107 180);
+    @apply bg-steel-blue-500 absolute right-[20px] w-[30px] h-[30px];
+    
+   @apply rounded-full  flex items-center justify-center
+   
+  }
+
+  .btnBack{
+    @apply bg-inherit border-none flex items-center justify-center text-slate-900
+  }

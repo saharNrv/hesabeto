@@ -1,0 +1,54 @@
+.loginWrap{
+    
+    /* background-color: red; */
+    height: 100vh;
+}
+
+
+
+/* body */
+
+.loginBody{
+    padding: 20px 10px;
+
+}
+.loginBodyTitle{
+   
+    @apply text-2xl text-center mb-5 text-steel-blue-500 my-4
+
+}
+.loginForm{
+
+}
+.loginBtnWrap{
+    padding: 20px;
+
+
+}
+.loginBtn{
+    @apply w-full p-3 border-none bg-steel-blue-600 text-white ;
+    @apply flex flex-row-reverse items-center gap-2 justify-center rounded-[5px]
+
+}
+.loginForgetPassword{
+   
+}
+.loginForgetPasswordLink{
+    @apply flex items-center justify-end gap-2 flex-row-reverse text-blue-500
+} 
+
+.registerPage{
+    @apply   flex items-center  px-5 gap-2
+}
+.registerPageTitle{
+@apply text-gray-400
+
+}
+
+.registerPageBtn{
+    @apply text-blue-500 bg-inherit border-none
+}
+
+.btnModal{
+    @apply w-full bg-steel-blue-500 text-white border-none rounded-md p-3 mt-3
+}
