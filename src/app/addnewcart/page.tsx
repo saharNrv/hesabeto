@@ -8,7 +8,7 @@ import Modal from "@/components/module/modal/Modal";
 import { apiGetAllBank, apiPostBank } from "../../../api/bank";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { replaceFaNum2EnNum } from "../../../lib/string";
+import { cartFormat, replaceFaNum2EnNum } from "../../../lib/string";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import {
   BankDTO,
@@ -38,9 +38,7 @@ export default function AddNewCart(): React.JSX.Element {
   const closeModal = (): void => {
     setShowModal(false);
   };
-  const formatCardNumber = (number: string): string => {
-    return number.replace(/\D/g, "").replace(/(\d{4})(?=\d)/g, "$1- ").trim();
-  };
+  
 
   useEffect((): void => {
     apiGetAllBank().then((res: BaseResponse<BankInfoDTO[]>) => {
@@ -112,8 +110,8 @@ export default function AddNewCart(): React.JSX.Element {
             title={"شماره کارت"}
             placeholder={"شماره کارت را وارد کنید"}
             value={cartNumber}
-            onChange={(value) => setCartNumber(formatCardNumber(value))}
-            type={"text"}
+            onChange={(value) => setCartNumber(cartFormat(value))}
+            type="text"
             maxLength={19}
           />
           <Input
@@ -121,7 +119,7 @@ export default function AddNewCart(): React.JSX.Element {
             placeholder={"نام کارت را وارد کنید"}
             value={cartName}
             onChange={(value) => setCartName(value)}
-            type={"text"}
+            type="text"
           />
 
           <div className={style.formBtn}>
