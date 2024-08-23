@@ -48,5 +48,31 @@ padding: 5px;
   @apply p-2 rounded-md bg-steel-blue-200 outline-none flex items-center justify-between ;
 }
 
+.cartBoxWrapper{
+  padding: 20px;
+}
 
+.cartBoxContact{
+ @apply border-2 border-solid border-steel-blue-500 rounded-md;
+ @apply flex flex-col p-4 bg-steel-blue-100;
+ box-shadow: 0px 0px 6px gray;
 
+}
+.cartBoxImgWrap{
+  @apply flex items-center justify-between
+}
+.cartBoxImgWrap img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartBoxNumber{
+  text-align: center;
+  color: #6a6d72;
+  margin: 10px 0px;
+}
+.cartBoxDate{
+  text-align: left;
+  color: #a7a7a7;
+}
