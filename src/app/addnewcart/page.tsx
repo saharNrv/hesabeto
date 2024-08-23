@@ -28,7 +28,6 @@ export default function AddNewCart(): React.JSX.Element {
   const [cartName, setCartName] = useState<string>("");
   const [showModal, setShowModal] = useState<boolean>(false);
   const [allBanks, setAllBanks] = useState<BankInfoDTO[]>([]);
-  const [cartBoxNumber, setCartBoxNumber] = useState<string>("");
 
   // choice bank handler func
   const choiceBank = (event: any) => {
@@ -38,6 +37,9 @@ export default function AddNewCart(): React.JSX.Element {
   // close modal handler
   const closeModal = (): void => {
     setShowModal(false);
+  };
+  const formatCardNumber = (number: string): string => {
+    return number.replace(/\D/g, "").replace(/(\d{4})(?=\d)/g, "$1- ").trim();
   };
 
   useEffect((): void => {
@@ -87,7 +89,7 @@ export default function AddNewCart(): React.JSX.Element {
             />
           </div>
           <div>
-            <p className={style.cartBoxNumber}>{cartBoxNumber}</p>
+            <p className={style.cartBoxNumber}>{cartNumber}</p>
           </div>
           <div>
             <p className={style.cartBoxDate}>
@@ -110,8 +112,9 @@ export default function AddNewCart(): React.JSX.Element {
             title={"شماره کارت"}
             placeholder={"شماره کارت را وارد کنید"}
             value={cartNumber}
-            onChange={(value) => setCartNumber(value)}
+            onChange={(value) => setCartNumber(formatCardNumber(value))}
             type={"text"}
+            maxLength={19}
           />
           <Input
             title={"نام"}

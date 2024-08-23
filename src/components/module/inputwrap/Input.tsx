@@ -7,8 +7,9 @@ type PropsDTO = {
   onChange: (value:string)=> void;
   value: string;
   type: string;
+  maxLength?: number;
 };
-export default function Input({ title, placeholder, onChange, value, type }: PropsDTO) {
+export default function Input({ title, placeholder, onChange, value, type, maxLength }: PropsDTO) {
   return (
     <div className={style.inputWrap}>
       <label>{title}</label>
@@ -17,6 +18,7 @@ export default function Input({ title, placeholder, onChange, value, type }: Pro
         placeholder={placeholder}
         onChange={(event) => onChange(event.target.value)}
         value={value}
+        maxLength={maxLength}
       />
     </div>
   );
